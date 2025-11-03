@@ -12,6 +12,7 @@ body {
   background: #101a13;
   color: #cde6c1;
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 /* Scroll suave */
@@ -438,39 +439,48 @@ footer {
   .acercade {
     flex-direction: column;
     padding: 60px 20px;
+    overflow-x: hidden;
   }
 
   .acercade .contenido-acercade {
     flex-direction: column;
     gap: 30px;
+    width: 100%;
+    max-width: 100%;
   }
 
   .acercade .texto {
-    min-width: 100%;
+    min-width: 0;
     width: 100%;
+    padding: 0;
   }
 
   .acercade .texto h2 {
     font-size: 1.8rem;
     margin-bottom: 15px;
+    text-align: center;
   }
 
   .acercade .texto p {
     font-size: 0.95rem;
     line-height: 1.7;
     text-align: left;
+    margin-bottom: 15px;
   }
 
   .acercade .imagen {
     flex: 0 0 auto;
     width: 100%;
     text-align: center;
+    margin: 0 auto;
+    padding: 0;
   }
 
   .acercade .imagen img {
-    margin-left: 0;
+    margin: 0 auto;
     max-width: 250px;
-    width: 100%;
+    width: auto;
+    display: block;
   }
 
   .proyecto {
@@ -498,30 +508,46 @@ footer {
 
   .acercade {
     padding: 40px 15px;
+    overflow-x: hidden;
   }
 
   .acercade .contenido-acercade {
     gap: 25px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .acercade .texto {
+    width: 100%;
+    min-width: 0;
+    padding: 0;
   }
 
   .acercade .texto h2 {
     font-size: 1.5rem;
     margin-bottom: 12px;
+    text-align: center;
   }
 
   .acercade .texto p {
     font-size: 0.9rem;
     line-height: 1.6;
+    text-align: left;
+    margin-bottom: 15px;
   }
 
   .acercade .imagen {
     width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    flex: 0 0 auto;
   }
 
   .acercade .imagen img {
-    margin-left: 0;
+    margin: 0 auto;
     max-width: 200px;
-    width: 80%;
+    width: auto;
+    display: block;
   }
 
   .menu a {
