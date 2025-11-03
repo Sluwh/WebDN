@@ -437,11 +437,40 @@ footer {
 
   .acercade {
     flex-direction: column;
+    padding: 60px 20px;
+  }
+
+  .acercade .contenido-acercade {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .acercade .texto {
+    min-width: 100%;
+    width: 100%;
+  }
+
+  .acercade .texto h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+
+  .acercade .texto p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    text-align: left;
+  }
+
+  .acercade .imagen {
+    flex: 0 0 auto;
+    width: 100%;
+    text-align: center;
   }
 
   .acercade .imagen img {
     margin-left: 0;
     max-width: 250px;
+    width: 100%;
   }
 
   .proyecto {
@@ -467,9 +496,32 @@ footer {
     padding: 40px 20px;
   }
 
+  .acercade {
+    padding: 40px 15px;
+  }
+
+  .acercade .contenido-acercade {
+    gap: 25px;
+  }
+
+  .acercade .texto h2 {
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+  }
+
+  .acercade .texto p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .acercade .imagen {
+    width: 100%;
+  }
+
   .acercade .imagen img {
     margin-left: 0;
     max-width: 200px;
+    width: 80%;
   }
 
   .menu a {
