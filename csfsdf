@@ -1,0 +1,29 @@
+    <section class="section--work">
+        <div class="img1">
+            <a href="img1/index.html" target="_blank"><img class="gallery_img" src="../Imagenes/img1.jpg" alt="img1"></a>
+        </div>
+        <div class="img2">
+            <a href="img2/index.html" target="_blank"><img class="gallery_img" src="../Imagenes/img2.jpg" alt="img2"></a>
+        </div>
+        <div class="img3">
+            <a href="img3/index.html" target="_blank"><img class="gallery_img" src="../Imagenes/img3.jpg" alt="img3"></a>
+        </div>
+        <div class="img4">
+            <a href="img4/index.html" target="_blank"><img class="gallery_img" src="../Imagenes/img4.jpg" alt="img4"></a>
+        </div>
+        <div class="img5">
+            <a href="img5/index.html" target="_blank"><img class="gallery_img" src="../Imagenes/img5.jpg" alt="img5"></a>
+        </div>
+    </section>
+
+
+
+
+
+        <!-- Galería de proyectos -->
+        <section class="section--top" id="inicio">
+            <h2>Nuestros Proyectos</h2>
+            <div class="top">
+                <img class="img--logo" src="../Imagenes/inicio.png" alt="inicio">  
+            </div>
+        </section>

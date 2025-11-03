@@ -1,0 +1,94 @@
+Este código es una sección de Diseño Adaptable (Responsive Design) en CSS, utilizando las reglas @media para reajustar los estilos del sitio web cuando la pantalla es más pequeña que un ancho específico.
+
+
+El bloque @media (max-width: 768px) aplica todos los estilos internos solo cuando el ancho de la ventana del navegador es 768 píxeles o menos.
+
+
+
+
+.header-contenido h1 font-size: 2.5rem;	
+Reduce el tamaño del título principal del encabezado (antes era 4rem).
+
+
+
+.header-contenido p font-size: 1rem; 
+Reduce el tamaño del texto del encabezado (antes era 1.3rem).
+
+
+
+.menu li margin: 5px 10px; 
+Reduce el espacio entre los elementos del menú de navegación.
+
+
+
+.titulo-seccion, .titulo-seccion-blanco	font-size: 2rem; 
+Reduce el tamaño de todos los títulos de sección (antes era 2.5rem).
+
+
+
+.servicio-card	width: 100%; 
+Fuerza a cada tarjeta de servicio a ocupar todo el ancho de la pantalla. En lugar de ver varias tarjetas en una fila, se apilarán verticalmente.
+
+
+
+.acercade flex-direction: column; 
+Cambia la dirección del Flexbox. La imagen y el texto de la sección "Acerca de" que estaban lado a lado (row) ahora se apilarán uno encima del otro (column).
+
+
+
+.contacto-info	flex-direction: column; y gap: 20px; 
+Al igual que la sección "Acerca de", los elementos de información de contacto (teléfono, correo, etc.) que estaban en fila se apilan verticalmente y se les reduce la separación.
+
+
+
+
+El bloque @media (max-width: 480px) aplica estilos cuando el ancho de la ventana es 480 píxeles o menos, generalmente dirigido a la mayoría de los teléfonos.
+
+
+
+.header-contenido h1 font-size: 2rem; 
+Reduce aún más el título principal (antes era 2.5rem en tabletas) para evitar que sea demasiado grande en pantallas pequeñas.
+
+
+
+.servicios, .acercade, .proyectos, .galeria, .contacto	padding: 40px 20px; 
+Reduce el espacio interior (padding) de la mayoría de las secciones. Esto es clave para ganar más espacio horizontal en pantallas estrechas (antes era 80px 40px).
+
+
+
+.menu a	font-size: 0.9rem; y padding: 6px 10px;	
+Reduce el tamaño del texto del menú y el espacio alrededor de los enlaces para que la barra de navegación ocupe menos espacio.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

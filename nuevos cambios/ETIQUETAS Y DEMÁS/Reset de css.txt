@@ -1,0 +1,19 @@
+Un Reset CSS que utiliza es una técnica básica de desarrollo web para eliminar o neutralizar la mayoría de los estilos predeterminados que los navegadores aplican a los elementos HTML. 
+
+Se conoce como reset porque "pone a cero" (reinicia) los estilos para que el desarrollador pueda empezar a diseñar desde una base limpia y consistente.
+
+El selector universal * selecciona absolutamente todos los elementos en la página. Las propiedades que se aplican son:
+
+1. margin: 0; y padding: 0;
+Propósito: Elimina los márgenes (margin) y rellenos (padding) predeterminados que los navegadores aplican a elementos como encabezados (h1, h2), párrafos (p) y listas (ul, ol).
+
+Problema que Soluciona: Sin esto, diferentes navegadores (Chrome, Firefox, Safari) aplican diferentes cantidades de margen/relleno, lo que causa inconsistencias en el diseño (el mismo diseño se ve diferente en distintos navegadores).
+
+2. box-sizing: border-box;
+Propósito: Cambia el modelo de caja de CSS de la forma predeterminada (content-box) a la forma más intuitiva (border-box).
+
+Problema que Soluciona:
+
+Con el valor predeterminado (content-box), si defines un ancho (width) y luego añades padding o border, el elemento crece más allá del ancho especificado.
+
+Con border-box, el padding y el border se incluyen dentro del ancho y alto especificados. Si estableces un elemento a width: 200px;, su ancho total, incluyendo el relleno y el borde, siempre será de 200px. Esto simplifica enormemente el diseño.

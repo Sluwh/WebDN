@@ -1,0 +1,34 @@
+display	flex Convierte el elemento .columna en un contenedor flexible (Flex container), lo que permite el uso de todas las demás propiedades de Flexbox.
+
+
+
+justify-content	center Alinea los ítems flexibles (elementos hijos) a lo largo del eje principal (horizontal, por defecto) del contenedor. En este caso, centra los ítems en la fila.
+
+
+
+align-items stretch Alinea los ítems flexibles a lo largo del eje secundario (vertical, por defecto). El valor stretch hace que los ítems se estiren para llenar la altura completa del contenedor (o de la línea flex) si no tienen una altura definida. Esto es útil para que todas las tarjetas tengan la misma altura visual.
+
+
+
+flex-wrap wrap Permite que los ítems flexibles salten a la línea siguiente cuando se queden sin espacio horizontal, lo que es esencial para el diseño adaptable.
+
+
+
+gap 30px Define el espacio entre los ítems flexibles. Habrá 30 píxeles de espacio tanto horizontal como verticalmente entre cada elemento de la cuadrícula.
+
+max-width: 1200px; Limita el ancho del contenedor a 1200 píxeles en pantallas grandes.
+
+
+margin: 0 auto;	Centra el contenedor completo en el medio de la página.
+
+
+
+.columna {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}

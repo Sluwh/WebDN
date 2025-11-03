@@ -1,0 +1,190 @@
+CAMBIOS EN CSS
+====================================
+
+
+1. ESTILOS GENERALES:
+   - Agregamos reset CSS completo con * { margin: 0; padding: 0; box-sizing: border-box; }
+   - Cambiamos la fuente de Arial a 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+   - Agregamos line-height: 1.6 al body para mejor legibilidad
+   - Agregamos scroll-behavior: smooth; para navegación suave entre secciones
+
+2. HEADER - MEJORAS:
+   - Agregamos animación fadeInUp al header-contenido para entrada elegante
+   - Cambiamos tamaño del h1 de 6.5rem a 4rem 
+   - Agregamos text-shadow al h1 para mejor legibilidad sobre video
+   - Mejoramos el botón:
+     * Cambiamos border-radius de 5px a 50px (botón redondeado)
+     * Agregamos box-shadow para profundidad
+     * Agregamos efecto hover con transform: translateY(-3px)
+     * Aumentamos padding de 10px 15px a 15px 35px
+   - Agregamos z-index: 1 al header-contenido para que esté sobre el video
+
+3. ANIMACIÓN FADEUP:
+   - Creamos nueva animación @keyframes fadeInUp
+   - Efecto de aparición suave desde abajo con opacidad
+
+4. MENÚ DE NAVEGACIÓN - MEJORAS:
+   - Agregamos backdrop-filter: blur(10px) para efecto glassmorphism
+   - Mejoramos el padding del menú: 15px 10px
+   - Agregamos flex-wrap: wrap para responsive
+   - Mejoramos los enlaces:
+     * font-weight: 600 (antes era bold)
+     * padding: 8px 15px con border-radius: 5px
+     * Efecto hover con background y cambio de color
+
+5. TÍTULOS DE SECCIÓN - NUEVA CLASE:
+   - Creamos .titulo-seccion para títulos oscuros
+   - Creamos .titulo-seccion-blanco para títulos blancos
+   - Estilo consistente: 2.5rem, centrado, margin-bottom: 40px
+
+6. SECCIÓN SERVICIOS - REDISEÑADA COMPLETAMENTE:
+   - Agregamos background: linear-gradient(135deg, #004d40 0%, #00695c 100%)
+   - Columna:
+     * Agregamos gap: 30px
+     * Agregamos max-width: 1200px con margin: 0 auto para centrar
+     * align-items: stretch para tarjetas del mismo tamaño
+   - Tarjetas de servicio (.servicio-card):
+     * Agregamos background glassmorphism: rgba(255, 255, 255, 0.1)
+     * Agregamos backdrop-filter: blur(10px)
+     * border-radius aumentado a 15px
+     * padding: 30px 20px
+     * border: 2px solid rgba(255, 255, 255, 0.2)
+     * Efecto hover con transform: translateY(-10px)
+     * Efecto hover en imágenes: transform: scale(1.05)
+   - Imágenes:
+     * Agregamos height: 200px
+     * object-fit: cover para mantener proporciones
+   - Texto:
+     * h3: color blanco, 1.8rem
+     * p: color #e0e0e0 para descripción
+
+7. SECCIÓN ACERCA DE - MEJORAS:
+   - Aumentamos padding de 40px a 80px
+   - Agregamos gap: 40px para separación entre texto e imagen
+   - Mejoramos flexbox con justify-content: space-between
+   - Texto:
+     * flex: 1 para ocupar espacio disponible
+     * h2: font-size: 2.5rem
+     * p: font-size: 1.1rem, line-height: 1.8, color: #424242
+   - Imagen:
+     * flex: 0 0 300px para tamaño fijo
+     * max-width: 300px
+     * border-radius: 15px
+     * box-shadow para profundidad
+     * Efecto hover: transform: scale(1.05)
+
+8. SECCIÓN PROYECTOS - COMPLETAMENTE REDISEÑADA:
+   - Cambiamos clase de .Proyectos a .proyectos (minúscula)
+   - padding: 80px 40px
+   - background: linear-gradient(135deg, #004d40 0%, #00251a 100%)
+   - Grid:
+     * gap: 30px
+     * max-width: 1200px centrado
+   - Tarjetas de proyecto (.proyecto):
+     * Cambiamos clase de .Proyecto a .proyecto
+     * padding: 30px 25px
+     * border: 2px solid #4dd0e1 (cyan)
+     * border-radius: 15px
+     * Agregamos efecto de brillo animado con ::before
+     * Efecto hover: translateY(-10px) con box-shadow cyan
+     * h3: color #4dd0e1, 1.5rem
+     * p: color #b0bec5 para descripción
+
+9. NUEVA SECCIÓN: GALERÍA DE TRABAJOS:
+   - Creamos estilos completos para .galeria
+   - padding: 80px 40px
+   - background: #ffffff
+   - Grid responsive:
+     * display: grid
+     * grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+     * gap: 25px
+     * max-width: 1200px
+   - Galería items:
+     * border-radius: 15px
+     * box-shadow: 0 5px 20px
+     * overflow: hidden
+     * Efecto hover: translateY(-8px)
+   - Imágenes:
+     * width: 100%, height: 250px
+     * object-fit: cover
+     * Efecto hover: scale(1.1)
+   - Overlay:
+     * position: absolute, opacity: 0
+     * background: rgba(0, 77, 64, 0.9)
+     * Aparece en hover con opacity: 1
+     * Texto centrado en blanco con mayúsculas
+
+10. NUEVA SECCIÓN: CONTACTO:
+    - Creamos estilos completos para .contacto
+    - padding: 80px 40px
+    - background: linear-gradient(135deg, #00695c 0%, #004d40 100%)
+    - Contenido:
+      * max-width: 800px centrado
+      * p: font-size: 1.3rem
+    - Info de contacto:
+      * display: flex con gap: 40px
+      * justify-content: center
+      * flex-wrap: wrap para responsive
+    - Items de contacto:
+      * background glassmorphism: rgba(255, 255, 255, 0.1)
+      * padding: 15px 25px
+      * border-radius: 50px (totalmente redondeado)
+      * backdrop-filter: blur(10px)
+      * border: 2px solid rgba(255, 255, 255, 0.2)
+      * Efecto hover: translateY(-5px) con mayor opacidad
+
+11. FOOTER - MEJORAS:
+    - Aumentamos padding de 20px a 25px 20px
+    - Mantuvimos background: #004d40
+    - .footer: font-size: 1rem, margin: 0
+
+12. DISEÑO RESPONSIVE - NUEVA SECCIÓN COMPLETA:
+    - Media query @media (max-width: 768px):
+      * header h1: 2.5rem
+      * header p: 1rem
+      * menu li: margin reducido
+      * títulos: 2rem
+      * servicio-card: width: 100%
+      * acercade: flex-direction: column
+      * proyecto: width: 100%
+      * contacto-info: flex-direction: column
+    
+    - Media query @media (max-width: 480px):
+      * header h1: 2rem
+      * Todas las secciones: padding reducido a 40px 20px
+      * menu a: font-size: 0.9rem
+
+13. EFECTOS Y TRANSICIONES AGREGADOS:
+    - Todos los elementos interactivos tienen transition: all 0.3s ease
+    - Efectos hover consistentes en toda la página
+    - Transformaciones suaves (translateY, scale)
+    - Box-shadows con colores coherentes
+    - Animaciones de entrada (fadeInUp)
+
+14. MEJORAS DE COLOR Y DISEÑO:
+    - Gradientes lineales en secciones clave
+    - Uso de rgba() para transparencias
+    - Backdrop-filter para efectos de cristal (glassmorphism)
+    - Border-radius consistente (10px, 15px, 50px según elemento)
+
+15. MEJORAS DE TIPOGRAFÍA:
+    - Jerarquía clara de tamaños de fuente
+    - Line-height mejorado para legibilidad
+    - Color de texto optimizado para contraste
+    - Uso de text-shadow en títulos sobre imágenes
+
+RESUMEN TÉCNICO:
+- Agregamos ~500 líneas de CSS (antes teníamos ~100)
+- Implementamos diseño responsive completo
+- Agregamos efectos modernos (glassmorphism, gradientes, sombras)
+- Creamos estilos para 2 secciones nuevas (Galería y Contacto)
+- Mejoramos todas las secciones existentes
+- Agregamos animaciones y transiciones suaves
+- Implementamos hover effects en todos los elementos interactivos
+- Optimizamos para diferentes tamaños de pantalla (pc, tablet, móvil)
+
+
+
+
+
+

@@ -1,0 +1,531 @@
+/*reset y estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #101a13;
+  color: #cde6c1;
+  line-height: 1.6;
+}
+
+/* Scroll suave */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ==================== HEADER ==================== */
+.header {
+  position: relative;
+  height: 100vh;
+  color: #cde6c1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.Video-fondo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(16, 26, 19, 0.763);
+  z-index: -1;
+}
+
+.header-contenido {
+  z-index: 1;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.header-contenido h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.header-contenido p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  color: rgba(255, 255, 255, 0.95);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+.header-contenido .btn {
+  background: #276d436d;
+  padding: 15px 35px;
+  text-decoration: none;
+  color: #cde6c1;
+  border-radius: 50px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  display: inline-block;
+  box-shadow: 0 4px 10px rgba(3, 143, 24, 0.486);
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+
+.header-contenido .btn:hover {
+  background: #1cc430b0;
+  color: #eafbe7;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(4, 114, 20, 0.753);
+}
+
+/* Animación fadeInUp */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ==================== MENÚ DE NAVEGACIÓN ==================== */
+.menu {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(180deg, #0000008f 0%,#05160d 90%, #00050315 100%);
+  backdrop-filter: blur(4px);
+  z-index: 100;
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 15px 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.menu li {
+  margin: 5px 20px;
+}
+
+.menu a {
+  transition: all 0.3s ease;
+  color: #cde6c1;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+
+.menu a:hover {
+  background: rgba(30, 64, 35, 0.8);
+  color: #06d621;
+}
+
+/* ==================== TÍTULOS DE SECCIÓN ==================== */
+.titulo-seccion {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #cde6c1;
+  text-align: center;
+  margin-bottom: 40px;
+  text-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  letter-spacing: 2px;
+}
+
+.titulo-seccion-blanco {
+  font-size: 2.5rem;
+  color: white;
+  text-align: center;
+  margin-bottom: 4px;
+  font-weight: bold;
+  text-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  letter-spacing: 2px;
+  font-weight: 800;
+}
+
+/* ==================== SECCIÓN SERVICIOS ==================== */
+.servicios {
+  padding: 200px 40px;
+  background: linear-gradient(180deg, #000000 0%, #181b18 70%, #000000 100%);
+}
+
+.columna {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.servicio-card {
+  width: 30%;
+  min-width: 280px;
+  text-align: center;
+  background: rgba(10, 56, 37, 0.349);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 30px 20px;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.servicio-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  background: rgba(14, 255, 58, 0.197);
+  border-color: rgba(0, 255, 38, 0.662);
+}
+
+.servicio-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+  filter: brightness(0.9) contrast(1.1);
+}
+
+.servicio-card:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.servicio-card h3 {
+  color: #adf1aa;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.servicio-card p {
+  color: rgba(205, 230, 193, 0.85);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* ==================== SECCIÓN ACERCA DE ==================== */
+.acercade {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 200px 40px;
+  background: linear-gradient(180deg, #000000 0%, #025c414e 30%, #06522c9f 70%,#000000 100%);
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.acercade .contenido-acercade {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.acercade .texto {
+  flex: 1;
+  min-width: 300px;
+}
+
+.acercade .texto h2 {
+  color: #cde6c1;
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.acercade .texto p {
+  color: rgba(205, 230, 193, 0.9);
+  font-size: 1.15rem;
+  margin-bottom: 4px;
+  line-height: 1.9;
+  text-align: justify;
+}
+
+.acercade .imagen {
+  flex: 0 0 300px;
+  text-align: center;
+}
+
+.acercade .imagen img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.959);
+  transition: transform 0.3s ease;
+  margin-left: 90px;
+  filter: brightness(1.1) contrast(1.1);
+  border: 2px solid rgba(15, 255, 51, 0.2);
+}
+
+.acercade .imagen img:hover {
+  transform: scale(1.05);
+  border-color: rgba(15, 255, 51, 0.5);
+}
+
+/* ==================== GALERÍA DE TRABAJOS ==================== */
+.galeria {
+  padding: 100px 40px;
+  background: linear-gradient(180deg, #000000 0%, #2c440ce1 50%,#63720c 80%, #071604 100%);
+}
+
+.galeria-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.galeria-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.galeria-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.galeria-item img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.galeria-item:hover img {
+  transform: scale(1.1);
+}
+
+.galeria-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(30, 64, 35, 0.95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.galeria-item:hover .galeria-overlay {
+  opacity: 1;
+}
+
+.galeria-overlay span {
+  color: #cde6c1;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.galeria-item a {
+  text-decoration: none;
+}
+
+/* ==================== SECCIÓN CONTACTO ==================== */
+.contacto {
+  position: relative;
+  padding: 80px 40px;
+  background: linear-gradient(180deg, #071604 0%, #030502 100%);
+  text-align: center;
+  color: #cde6c1;
+}
+
+.contacto-contenido {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contacto-contenido p {
+  color: rgba(205, 230, 193, 0.9);
+  font-size: 1.3rem;
+  margin-bottom: 40px;
+}
+
+.contacto-info {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.contacto-info p {
+  font-size: 1.1rem;
+  background: rgba(16, 26, 19, 0.8);
+  padding: 15px 25px;
+  border-radius: 50px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(15, 255, 51, 0.2);
+  transition: all 0.3s ease;
+}
+
+.contacto-info p:hover {
+  background: rgba(30, 64, 35, 0.7);
+  border-color: rgba(15, 255, 51, 0.6);
+}
+
+
+/* ==================== FOOTER ==================== */
+footer {
+  background: #101a13;
+  padding: 15px 10px;
+  text-align: center;
+  color: #cde6c1;
+  font-size: 1rem;
+  margin: 0;
+
+}
+
+/* ==================== RESPONSIVE DESIGN ==================== */
+@media (max-width: 768px) {
+  .header-contenido h1 {
+    font-size: 2.5rem;
+  }
+
+  .header-contenido p {
+    font-size: 1rem;
+  }
+
+  .menu li {
+    margin: 5px 10px;
+  }
+
+  .titulo-seccion,
+  .titulo-seccion-blanco {
+    font-size: 2rem;
+  }
+
+  .servicio-card {
+    width: 100%;
+  }
+
+  .acercade {
+    flex-direction: column;
+  }
+
+  .acercade .imagen img {
+    margin-left: 0;
+    max-width: 250px;
+  }
+
+  .proyecto {
+    width: 100%;
+  }
+
+  .contacto-info {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-contenido h1 {
+    font-size: 2rem;
+  }
+
+  .servicios,
+  .acercade,
+  .proyectos,
+  .galeria,
+  .contacto {
+    padding: 40px 20px;
+  }
+
+  .acercade .imagen img {
+    margin-left: 0;
+    max-width: 200px;
+  }
+
+  .menu a {
+    font-size: 0.9rem;
+    padding: 6px 10px;
+  }
+}
+
+/* ==================== ESTILOS DE FLECHAS UNIFICADOS ==================== */
+.flecha {
+  text-align: center;
+  margin-top: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Clase unificada para todos los botones de navegación entre secciones */
+.nav-btn {
+  height: 40px;
+  width: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(15, 255, 51, 0.139);
+  padding: 15px;
+  text-decoration: none;
+  color: #cde6c1;
+  border-radius: 50%;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(12, 82, 22, 0.808);
+  margin: 0 auto;
+}
+
+.nav-btn:hover {
+  background: #4b7c6157;
+  transform: translateY(4px);
+  box-shadow: 0 6px 15px rgba(12, 82, 22, 0.9);
+}
+
+.nav-btn img {
+  width: 20px;
+  height: auto;
+}
+
+/* Posicionamiento específico para cada sección */
+.acercade .flecha {
+  margin-top: auto;
+  margin-bottom: 20px;
+}
+
+.contacto .flecha {
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+}

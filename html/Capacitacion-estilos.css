@@ -1,0 +1,326 @@
+/*reset y estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #2f4550;
+  color: #d7dedc;
+  line-height: 1.6;
+}
+
+/* Scroll suave */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ==================== HEADER ==================== */
+.header {
+  position: relative;
+  height: 100vh;
+  color: #d7dedc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: none; /* quitar fondo para que se vea el video */
+}
+
+.Video-fondo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.364);
+  z-index: -1;
+}
+
+.header-contenido {
+  z-index: 1;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.header-contenido h1 {
+  font-size: 3.6rem;
+  margin-bottom: 10px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  color: #d3f4fa
+}
+
+.header-contenido p {
+  font-size: 2.1rem;
+  margin-bottom: 0;
+  color: #ecece3;
+}
+
+/* Animación fadeInUp */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ==================== TÍTULOS DE SECCIÓN ==================== */
+.titulo-seccion-blanco {
+  font-size: 2.2rem;
+  color: #9fcdd8;
+  text-align: center;
+  margin-bottom: 28px;
+  font-weight: bold;
+}
+
+.titulo-reco {
+  font-size: 2.2rem;
+  color: #c3e0dc;
+  text-align: center;
+  margin-bottom: 28px;
+  font-weight: bold;
+}
+.titulo-curso {
+  font-size: 1.8rem;
+  color: #cfcfcd;
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+/* ==================== SECCIÓN RECONOCIMIENTO ==================== */
+.reconocimiento {
+  position: relative;
+  z-index: 2;
+  padding: 60px 40px;
+  background: linear-gradient(180deg, #050713d0 0%, #05051f 100%);
+  text-align: center;
+  color: #d7dedc;
+}
+
+.reconocimiento-contenido {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.reconocimiento-contenido p {
+  color: #cfcfcd;
+  font-size: 1.6em;
+  margin-bottom: 4px;
+  text-align: justify;
+}
+
+/* ==================== SECCIÓN PERFIL ==================== */
+.perfil {
+  padding: 60px 40px;
+  background: linear-gradient(180deg, #05051f 0%, #2f4550 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.perfil-contenido {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  max-width: 1000px;
+}
+
+.perfil .imagen {
+  text-align: center;
+}
+
+.perfil .imagen img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 15px;
+  box-shadow: 0 10px 28px rgba(32, 32, 32, 0.18);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.perfil .imagen img:hover {
+  transform: scale(1.04);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.28);
+}
+
+.perfil .imagen a {
+  text-decoration: none;
+}
+
+.perfil .texto {
+  flex: 1;
+  min-width: 300px;
+  text-align: left;
+}
+
+.perfil .texto h2 {
+  color: #d7dedc;
+  font-size: 2.2rem;
+  margin-bottom: 18px;
+}
+
+.perfil .texto p {
+  color: #cfcfcd;
+  font-size: 1.05rem;
+  margin-bottom: 12px;
+  line-height: 1.8;
+}
+
+/* ==================== SECCIÓN CURSO ==================== */
+.curso {
+  padding: 60px 40px;
+  background: linear-gradient(180deg, #2f4550 0%, #050713d0 100%);
+  text-align: center;
+}
+
+.curso-contenido {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.curso-contenido img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 15px;
+  box-shadow: 0 10px 28px rgba(32, 32, 32, 0.18);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.curso-contenido img:hover {
+  transform: scale(1.04);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.28);
+}
+
+.curso-contenido a {
+  text-decoration: none;
+}
+
+
+
+/* ==================== FOOTER ==================== */
+footer {
+  background: #2f4550;
+  padding: 25px 20px;
+  text-align: center;
+}
+
+.footer {
+  color: #d7dedc;
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* ==================== RESPONSIVE DESIGN ==================== */
+@media (max-width: 768px) {
+  .header {
+    height: 42vh;
+  }
+  .header-contenido h1 {
+    font-size: 2.2rem;
+  }
+  .header-contenido p {
+    font-size: 1rem;
+  }
+  .titulo-seccion-blanco {
+    font-size: 1.9rem;
+  }
+.perfil {
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+  }
+
+}
+@media (max-width: 480px) {
+  .header {
+    height: 38vh;
+  }
+  .perfil,
+  .reconocimiento {
+    padding: 40px 20px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .perfil .Curso {
+    order: 3; /* Asegura que quede abajo */
+    justify-content: flex-start; /* Alinea a la izquierda */
+    margin-left: 0;
+    text-align: left;
+  }
+}
+/*
+DEBUG BORDES
+
+
+.perfil {
+  border: 2px dashed #ff9800;
+}
+.perfil .imagen {
+  border: 2px solid #2196f3;
+}
+.perfil .texto {
+  border: 2px solid #4caf50;
+}
+.perfil .Curso {
+  border: 2px solid #e91e63;
+}
+*/
+
+/* ==================== ESTILOS DE FLECHAS ==================== */
+.flecha {
+  text-align: center;
+  margin-top: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+/* Clase unificada para todos los botones de navegación entre secciones */
+.nav-btn {
+  height: 40px;
+  width: 40px;
+  background: #ffffff70;
+  padding: 15px;
+  text-decoration: none;
+  color: #c9d1d6;
+  border-radius: 50px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(30, 5, 112, 0.738);
+  margin: 0 auto;
+}
+
+.nav-btn:hover {
+  background: #4b547c8e;
+  transform: translateY(4px);
+  box-shadow: 0 6px 15px rgba(8, 45, 100, 0.556);
+}
+
+.nav-btn img {
+  width: 20px;
+  height: auto;
+}
