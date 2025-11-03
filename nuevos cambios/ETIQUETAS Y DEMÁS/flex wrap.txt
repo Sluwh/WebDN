@@ -1,6 +1,0 @@
-flex-wrap wrap 
-Permite que los ítems flex salten a una nueva línea cuando se queden sin espacio en la línea actual.
-
-Por defecto, cuando defines un contenedor con display: flex;, todos sus elementos hijos intentarán forzarse a caber en una sola línea
-
-Al usar flex-wrap: wrap;, le indicas al navegador que, si la suma de los anchos de los elementos es mayor que el ancho del contenedor, debe colocar automáticamente los elementos excedentes en la línea siguiente, como si fueran palabras en un párrafo.

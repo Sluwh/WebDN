@@ -1,6 +1,0 @@
-object-fit cover 
-
-Esta es una propiedad crucial. 
-Le indica al navegador que la imagen debe cubrir completamente las dimensiones fijas de 200px (el contenedor de la imagen). 
-
-Si la imagen original no tiene las proporciones exactas, se recortará (sin distorsionarse) para llenar el espacio.

@@ -1,7 +1,0 @@
-backdrop-filter: blur(10px);
-
-blur(10px) Función de desenfoque 
-
-Aplica un efecto de desenfoque (blur) al área detrás del elemento. 
-
-El valor de 10px determina la intensidad del desenfoque: cuanto mayor es el número, más borroso se ve el fondo.
