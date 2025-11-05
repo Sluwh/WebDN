@@ -185,7 +185,7 @@ html {
 .servicio-card {
   width: 30%;
   min-width: 280px;
-  text-align: start;
+  text-align: center;
   background: rgba(10, 56, 37, 0.349);
   backdrop-filter: blur(10px);
   border-radius: 15px;
