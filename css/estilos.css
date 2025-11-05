@@ -221,6 +221,7 @@ html {
   font-size: 1.8rem;
   margin-bottom: 15px;
   text-align: center;
+  justify-content: center;
 }
 
 .servicio-card p {
