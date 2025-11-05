@@ -185,7 +185,7 @@ html {
 .servicio-card {
   width: 30%;
   min-width: 280px;
-  text-align: left;
+  text-align: start;
   background: rgba(10, 56, 37, 0.349);
   backdrop-filter: blur(10px);
   border-radius: 15px;
@@ -226,6 +226,7 @@ html {
   color: rgba(205, 230, 193, 0.85);
   font-size: 1rem;
   line-height: 1.6;
+  text-align: start;
 }
 
 /* ==================== SECCIÓN ACERCA DE ==================== */
